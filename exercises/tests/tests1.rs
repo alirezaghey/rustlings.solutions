@@ -6,12 +6,25 @@
 // This test has a problem with it -- make the test compile! Make the test
 // pass! Make the test fail! Execute `rustlings hint tests1` for hints :)
 
-// I AM NOT DONE
-
 #[cfg(test)]
 mod tests {
     #[test]
     fn you_can_assert() {
-        assert!();
+        assert!(true);
+    }
+    
+    #[test]
+    fn you_can_assert2() {
+        assert_eq!(1, 1);
+    }
+    
+    #[should_panic]
+    fn panics() {
+        panic!();
+    }
+    
+    #[test]
+    fn you_can_assert3() {
+        assert_ne!(1, 3);
     }
 }
